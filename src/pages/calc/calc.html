@@ -1,0 +1,36 @@
+<!--
+  Generated template for the Calc page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>calc</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<ion-list>
+
+  <ion-item>
+    <ion-label floating>No1</ion-label>
+    <ion-input type="number" [(ngModel)]="no1"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>No2</ion-label>
+    <ion-input type="number" [(ngModel)]="no2"></ion-input>
+  </ion-item>
+  <ion-item>
+<button ion-button large (click)="onAdd()">Add</button>
+  </ion-item>
+  <ion-item>
+   <h1>{{ans}}</h1>
+    </ion-item>
+</ion-list>
+<button (click)="hello()">Click me</button>
+</ion-content>
